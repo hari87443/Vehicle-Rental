@@ -1,0 +1,97 @@
+.home-container {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80")
+      no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+  background-attachment: fixed;
+}
+
+.hero-section h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.hero-section .btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Features Section */
+.features {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.features h2 {
+  font-weight: 700;
+  color: #212529;
+}
+
+.features .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.features .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(90deg, #212529, #343a40);
+  padding: 80px 0;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-weight: 700;
+}
+
+.cta-section .btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background-color: #ffca2c;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .cta-section {
+    padding: 60px 0;
+  }
+}
